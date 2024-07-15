@@ -1,0 +1,70 @@
+.tarrifs {
+    width: 100%;
+    height: 480px;
+
+    &-row {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-card {
+        width: 480px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        &__title {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 120%;
+            text-align: center;
+            color: $white-color;
+            margin-bottom: 15px;
+            cursor: pointer;
+            @include trn();
+
+            &:hover {
+                color: $orange-color;
+            }
+        }
+
+        &__subtitle {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            text-align: center;
+            color: $white-color;
+            cursor: pointer;
+            @include trn();
+
+            &:hover {
+                color: $orange-color;
+            }
+        }
+
+        &.one {
+            background-image: url(../../../images/tarrifs/tarrif-one.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &.two {
+            background-image: url(../../../images/tarrifs/tarif-two.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &.three {
+            background-image: url(../../../images/tarrifs/tarrif-three.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
